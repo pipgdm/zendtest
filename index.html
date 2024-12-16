@@ -15,42 +15,29 @@
 
         /* Chatbot Overlay */
         .chatbot-container {
-            position: fixed; /* Fixed position to keep it visible */
-            bottom: 20px;
-            right: 20px;
-            background: #fff;
+            position: fixed; /* Keeps the iframe in position */
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            width: 350px; /* Chatbot width */
+            height: 500px; /* Chatbot height */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
-            width: 300px;
-            height: 400px;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
+            background-color: white;
         }
 
-        .chatbot-header {
-            background-color: #0078FF;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .chatbot-body {
-            flex: 1;
-            padding: 10px;
-            font-size: 14px;
+        /* Chatbot iframe */
+        .chatbot-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes iframe border */
         }
     </style>
 </head>
 <body>
     <!-- Chatbot Section -->
     <div class="chatbot-container">
-        <div class="chatbot-header">Chat with Us</div>
-        <div class="chatbot-body">
-            <!-- Placeholder for chatbot -->
-            <p>Hello! How can I assist you today?</p>
-        </div>
+        <iframe src="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/16/11/20241216111259-EBHJBK2F.json"></iframe>
     </div>
 </body>
 </html>
